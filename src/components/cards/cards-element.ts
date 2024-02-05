@@ -4,6 +4,10 @@ import {customElement, property} from 'lit/decorators.js';
 @customElement('cards-element')
 class CardsElement extends LitElement {
   static override styles = css`
+    p {
+      margin: 0;
+    }
+
     .card {
       border: 1px solid #091e4224;
       background: white;
@@ -12,19 +16,16 @@ class CardsElement extends LitElement {
       border-radius: 4px;
     }
 
-    .card__icon {
-      width: 18px;
-      height: 18px;
-      display: block;
-      background-color: black;
-      border-radius: 50%;
+    .card:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+      cursor: pointer;
     }
 
     .card__content {
       display: flex;
       justify-content: flex-start;
       gap: 10px;
-      align-items: baseline;
+      align-items: flex-start;
     }
 
     .card__title p:first-child {
@@ -36,6 +37,11 @@ class CardsElement extends LitElement {
       font-size: 10px;
       line-height: normal;
       font-weight: 300;
+      margin: 10px 0;
+    }
+
+    .card__icon {
+      color: blue;
     }
   `;
 
@@ -45,11 +51,16 @@ class CardsElement extends LitElement {
   @property()
   brand = 'Leapfrog';
 
+  @property()
+  iconName = 'house';
+
   override render() {
     return html`
       <div class="card">
         <div class="card__content">
-          <div class="card__icon"></div>
+          <div class="card__icon">
+            <mwc-icon>${this.iconName}</mwc-icon>
+          </div>
           <div class="card__title">
             <p>${this.title}</p>
             <p class="card__small-text">${this.brand}</p>

@@ -19,21 +19,35 @@ class BodyElement extends LitElement {
         <p>PICK UP WHERE YOU LEFT OFF</p>
 
         <div class="card-wrapper">
-          <cards-element title="Online Accounting Course"></cards-element>
-          <cards-element title="Teams/Pods" brand="Leapfrog"></cards-element>
+          <cards-element
+            title="Online Accounting Course"
+            iconName="description"
+          ></cards-element>
+          <cards-element
+            title="Teams/Pods"
+            brand="Leapfrog"
+            iconName="description"
+          ></cards-element>
           <cards-element
             title="Leapfrog Worklog Guidelines"
             brand="Leapfrog"
+            iconName="description"
           ></cards-element>
           <cards-element
             title="Extension must have"
             brand="Vyaguta"
+            iconName="description"
           ></cards-element>
           <cards-element
             title="Self Reflection"
             brand="Leapfrog"
+            iconName="description"
           ></cards-element>
-          <cards-element title="Ask for help!" brand="Leapfrog"></cards-element>
+          <cards-element
+            title="Ask for help!"
+            brand="Leapfrog"
+            iconName="description"
+          ></cards-element>
         </div>
 
         <p>DISCOVER WHAT'S HAPPENING</p>

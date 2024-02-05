@@ -1,6 +1,7 @@
 import {LitElement, html, css} from 'lit';
 import {property} from 'lit/decorators/property.js';
 import {customElement} from 'lit/decorators/custom-element.js';
+import '@material/mwc-icon';
 
 @customElement('description-card-element')
 class DescriptionCardElement extends LitElement {
@@ -72,7 +73,7 @@ class DescriptionCardElement extends LitElement {
 
   // eslint-disable-next-line @typescript-eslint/no-inferrable-types
   @property()
-  title: string = 'Leapfrog Worklog Guideline';
+  override title: string = 'Leapfrog Worklog Guideline';
 
   override render() {
     return html` <div class="description-card">

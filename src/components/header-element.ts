@@ -1,6 +1,7 @@
 import {LitElement, html, css} from 'lit';
 import {customElement} from 'lit/decorators/custom-element.js';
 import './forms/button-element';
+import '@material/mwc-icon';
 
 @customElement('header-element')
 class HeaderElement extends LitElement {
@@ -43,12 +44,26 @@ class HeaderElement extends LitElement {
       justify-content: center;
     }
 
-    .icon {
-      width: 20px;
-      height: 20px;
-      display: block;
-      background-color: white;
+    .profile-img {
+      width: 24px;
+      height: 24px;
       border-radius: 100%;
+      background-color: red;
+    }
+
+    input {
+      outline: none;
+      background-color: unset;
+      padding: 8px;
+      border-radius: 4px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      box-shadow: none;
+      background-color: rgb(3, 142, 67);
+      color: white;
+    }
+
+    input::placeholder {
+      color: white;
     }
   `;
 
@@ -70,14 +85,18 @@ class HeaderElement extends LitElement {
             <a class="navbar__link" href="#"> Spaces </a>
             <a class="navbar__link" href="#"> Teams </a>
             <a class="navbar__link" href="#"> App </a>
-            <button-element name="Create"></button-element>
+            <button-element name="Create" iconName="add"></button-element>
           </div>
         </div>
         <div class="navbar__content">
           <input type="search" placeholder="Search" />
-          <div class="icon"></div>
-          <div class="icon"></div>
-          <div class="icon"></div>
+          <div class="icon">
+            <mwc-icon>notifications</mwc-icon>
+          </div>
+          <div class="icon">
+            <mwc-icon>help</mwc-icon>
+          </div>
+          <div class="profile-img "></div>
         </div>
       </div>
     `;

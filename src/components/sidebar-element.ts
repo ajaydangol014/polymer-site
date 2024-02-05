@@ -12,7 +12,9 @@ class SidebarElement extends LitElement {
       text-decoration: none;
       color: black;
       font-size: 16px;
-      display: block;
+      display: flex;
+      gap: 8px;
+      align-items: center;
       border-radius: 4px;
       padding: 16px 8px;
     }
@@ -20,16 +22,35 @@ class SidebarElement extends LitElement {
     .sidebar__item:hover {
       background: #cce0ff;
     }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    mwc-icon {
+      vertical-align: middle;
+    }
   `;
 
   override render() {
     return html` <div class="sidebar">
       <div class="sidebar__menu">
-        <a class="sidebar__item" href="#">Overview </a>
-        <a class="sidebar__item" href="#"> Recent </a>
-        <a class="sidebar__item" href="#"> Starred </a>
-        <a class="sidebar__item" href="#"> Draft </a>
-        <a class="sidebar__item" href="#"> Tasks </a>
+        <a class="sidebar__item" href="#"
+          ><mwc-icon class="icon">home_outlined</mwc-icon><span>Overview</span></a>
+        </a>
+        <a class="sidebar__item" href="#"
+          ><mwc-icon class="icon">schedule</mwc-icon><span>Recent</span></a>
+        </a>
+        <a class="sidebar__item" href="#"
+          ><mwc-icon class="icon">star_outlined</mwc-icon><span>Starred</span></a>
+        </a>
+        <a class="sidebar__item" href="#"
+          ><mwc-icon class="icon">description_outlined</mwc-icon><span>Draft</span></a>
+        </a>
+        <a class="sidebar__item" href="#"
+          ><mwc-icon class="icon">checkbox_outlined</mwc-icon><span>Tasks</span></a>
+        </a>
       </div>
       <div class="sidebar__spaces"></div>
     </div>`;
