@@ -1,1 +1,0 @@
-{"version":3,"file":"body-element.d.ts","sourceRoot":"","sources":["../src/components/body-element.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,UAAU,EAAY,MAAM,KAAK,CAAC;AAE1C,OAAO,uBAAuB,CAAC;AAC/B,OAAO,kCAAkC,CAAC;AAE1C,cACM,WAAY,SAAQ,UAAU;IAClC,OAAgB,MAAM,0BAMpB;IAEO,MAAM;CAgDhB;AAED,OAAO,CAAC,MAAM,CAAC;IACb,UAAU,qBAAqB;QAC7B,cAAc,EAAE,WAAW,CAAC;KAC7B;CACF"}

@@ -1,1 +1,0 @@
-{"version":3,"file":"button-element.d.ts","sourceRoot":"","sources":["../../src/components/forms/button-element.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,UAAU,EAAY,MAAM,KAAK,CAAC;AAG1C,cACM,aAAc,SAAQ,UAAU;IACpC,OAAgB,MAAM,0BAapB;IAGF,IAAI,SAAY;IAEP,MAAM;CAGhB;AAED,OAAO,CAAC,MAAM,CAAC;IACb,UAAU,qBAAqB;QAC7B,gBAAgB,EAAE,aAAa,CAAC;KACjC;CACF"}
